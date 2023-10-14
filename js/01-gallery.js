@@ -17,3 +17,22 @@ const imageItems = galleryItems.map((image) => {
 gallery.append(...imageItems);
 
 console.log(imageItems);
+
+gallery.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (event.target.tagName === "IMG") {
+    const imageUrl = event.target.parentElement.href;
+
+    const instance = basicLightbox.create(`
+      <img src="${imageUrl}" width="800" height="600">
+    `);
+
+    instance.show();
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        instance.close();
+      }
+    });
+  }
+});
