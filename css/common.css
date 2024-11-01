@@ -97,7 +97,7 @@ label {
   flex-direction: column;
   gap: 16px;
 }
-button {
+.login-form button {
   width: 86px;
   height: 40px;
   padding: 8px 16px 8px 16px;
@@ -106,3 +106,28 @@ button {
   background-color: #4e75ff;
   color: #f6f6fe;
 }
+
+/*=================================task5 ==============*/
+.widget {
+  justify-items: center;
+  align-items: center;
+}
+.widget p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.change-color {
+  width: 148px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #ffffff;
+}
+
+/*=================================task6 ==============*/
