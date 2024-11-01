@@ -1,3 +1,4 @@
+"use strict";
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -39,6 +40,6 @@ images.forEach((element) => {
     }
     console.log(alt);
   });
-  const picture = `<li><img src="${src}" alt="${alt}" /></li>`;
+  const picture = `<li><img src="${src}" alt="${alt}" width = 360 height = 300 /></li>`;
   gallery.insertAdjacentHTML("afterbegin", picture);
 });
