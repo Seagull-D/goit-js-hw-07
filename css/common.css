@@ -131,3 +131,10 @@ label {
 }
 
 /*=================================task6 ==============*/
+.controls {
+  width: 486px;
+  height: 104px;
+  padding: 32px 0px 0px 0px;
+  gap: 16px;
+  border-radius: 8px;
+}
