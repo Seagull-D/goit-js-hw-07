@@ -132,9 +132,38 @@ label {
 
 /*=================================task6 ==============*/
 .controls {
+  display: flex;
   width: 486px;
   height: 104px;
   padding: 32px 0px 0px 0px;
   gap: 16px;
   border-radius: 8px;
+  background-color: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+.controls input {
+  margin-left: 32px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px, solid;
+}
+
+.controls button {
+  width: 120px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  padding-left: 32px;
+  padding-top: 32px;
+  background-color: #f6f6fe;
 }

@@ -9,6 +9,7 @@ const createBtn = document.querySelector("#controls button[data-create]");
 const destroyBtn = document.querySelector("#controls button[data-destroy]");
 const allBoxes = document.querySelector("#boxes");
 inputCreate.parentNode.classList.add("controls");
+allBoxes.classList.add("boxes");
 createBtn.addEventListener("click", createElem);
 destroyBtn.addEventListener("click", destroyElem);
 
