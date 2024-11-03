@@ -10,8 +10,8 @@ const destroyBtn = document.querySelector("#controls button[data-destroy]");
 const allBoxes = document.querySelector("#boxes");
 inputCreate.parentNode.classList.add("controls");
 allBoxes.classList.add("boxes");
-createBtn.addEventListener("click", createElem);
-destroyBtn.addEventListener("click", destroyElem);
+createBtn.addEventListener("click", createBoxes);
+destroyBtn.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
   const boxes = [];
@@ -28,20 +28,20 @@ function createBoxes(amount) {
   allBoxes.innerHTML = "";
   allBoxes.append(...boxes);
 }
-function createElem() {
-  const inputNumb = Number(inputCreate.value);
+function createBoxes(emount) {
+  const emount = Number(inputCreate.value);
 
-  if (inputNumb >= 1 && inputNumb <= 100) {
-    createBoxes(inputNumb);
+  if (emount >= 1 && emount <= 100) {
+    createBoxes(emount);
     inputCreate.value = "";
     inputCreate.style.borderColor = "";
   } else {
     inputCreate.style.borderColor = "red";
   }
-  console.log(inputNumb);
+  console.log(emount);
 }
 
-function destroyElem() {
+function destroyBoxes() {
   allBoxes.innerHTML = "";
   inputCreate.value = "";
   inputCreate.style.borderColor = "";
