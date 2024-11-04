@@ -4,14 +4,15 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-const body = document.querySelector(".widget");
+const wigetContainer = document.querySelector(".widget");
 const spanColor = document.querySelector(".color");
 const colorButton = document.querySelector(".change-color");
 
 colorButton.addEventListener("click", changeColor);
 
 function changeColor(evt) {
-  body.parentNode.style.backgroundColor = getRandomHexColor();
-  spanColor.style.backgroundColor = body.parentNode.style.backgroundColor;
+  wigetContainer.parentNode.style.backgroundColor = getRandomHexColor();
+  spanColor.style.backgroundColor =
+    wigetContainer.parentNode.style.backgroundColor;
   spanColor.parentNode.style.color = getRandomHexColor();
 }

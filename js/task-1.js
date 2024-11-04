@@ -1,13 +1,13 @@
 "use strict";
 
 const categories = document.querySelector("#categories");
-console.log(`Number og categories: ${counter(categories)}`);
+console.log(`Number of categories: ${counter(categories)}`);
 
 function counter(list) {
   const listArr = [...list.children];
   let num = 0;
-  listArr.forEach((element, idx) => {
-    num += idx + 1;
+  listArr.forEach((element) => {
+    num += listArr.length;
   });
   return num;
 }
